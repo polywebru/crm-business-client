@@ -3,7 +3,16 @@ import VueRouter from "vue-router";
 
 Vue.use(VueRouter);
 
-const routes = [];
+const routes = [
+  {
+    path: "/busines",
+    name: "busines",
+    component: () => import("@/views/BusinesProfile.vue"),
+    meta: {
+      layout: "busines",
+    },
+  },
+];
 
 const router = new VueRouter({
   mode: "history",
