@@ -1,11 +1,12 @@
 <template>
-  <div class="buisbes">
-    <component :is="layout"></component>
+  <div class="buisbes" data-app="true">
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import BusinesLayout from "@/views/BusinesProfile.vue";
+// import BusinesLayout from "@/views/BusinesProfile.vue";
+// import BusinesSetingsLayout from "@/views/BusinesSetings.vue";
 export default {
   name: "App",
   data() {
@@ -17,7 +18,8 @@ export default {
     },
   },
   components: {
-    BusinesLayout,
+    // BusinesLayout,
+    // BusinesSetingsLayout,
   },
 };
 </script>
